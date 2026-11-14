@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · Wildcat Mahj</title>
+<meta name="description" content="Help with Wildcat Mahj: how to start a game, add a card you own, back up your cards, and get in touch.">
+<meta name="color-scheme" content="light dark">
+<style>
+:root {
+  --bg: #F5F8F8;
+  --panel: #FFFFFF;
+  --ink: #2F2A2E;
+  --muted: #5E5560;
+  --link: #A3456C;
+  --rule: #E3D3DA;
+  --pink-soft: #F6E1E9;
+  --green-soft: #DCEBDF;
+  --focus: #A3456C;
+  --edge-pink: #E3A3BB;
+  --edge-green: #9CC5A5;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #34373D;
+    --panel: #42464C;
+    --ink: #EEECEF;
+    --muted: #C9C4CB;
+    --link: #F2B8CC;
+    --rule: #4D5157;
+    --pink-soft: #4A3C42;
+    --green-soft: #3B4A3E;
+    --focus: #F2B8CC;
+    --edge-pink: #B9798F;
+    --edge-green: #7FA889;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+.wrap { max-width: 40rem; margin: 0 auto; padding: 0 1.25rem; }
+a { color: var(--link); text-underline-offset: 0.15em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+.skip { position: absolute; left: -9999px; }
+.skip:focus { left: 1rem; top: 1rem; background: var(--panel); padding: 0.5rem 0.75rem; z-index: 1; }
+header.site { border-bottom: 1px solid var(--rule); }
+header.site .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 1.25rem; padding-top: 0.875rem; padding-bottom: 0.875rem; }
+.brand { display: flex; align-items: center; gap: 0.625rem; color: var(--ink); text-decoration: none; font-weight: 700; font-size: 1.125rem; }
+.brand img { width: 28px; height: 36px; }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.25rem; }
+nav a { font-weight: 600; text-decoration: none; padding: 0.25rem 0; }
+nav a:hover { text-decoration: underline; }
+nav a[aria-current="page"] { color: var(--ink); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.35em; }
+main { padding: 2.5rem 0 3rem; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 0.5rem; }
+h2 { font-size: 1.375rem; line-height: 1.3; margin: 2.25rem 0 0.5rem; }
+h3 { font-size: 1.125rem; line-height: 1.4; margin: 1.75rem 0 0.25rem; }
+p, ul, ol { margin: 0 0 1rem; }
+li { margin-bottom: 0.375rem; }
+.lede { font-size: 1.25rem; }
+.meta { color: var(--muted); font-size: 1rem; }
+.note { background: var(--panel); border-left: 4px solid var(--edge-green); border-radius: 10px; padding: 1rem 1.25rem; margin: 1.5rem 0; }
+.note p:last-child { margin-bottom: 0; }
+.summary { background: var(--pink-soft); border-radius: 14px; padding: 1.25rem 1.5rem; margin: 1.5rem 0 1.75rem; }
+.summary h2 { margin-top: 0; }
+.summary p:last-child { margin-bottom: 0; }
+.hero { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem; }
+.hero img { width: 78px; height: 100px; flex: none; }
+.features { list-style: none; padding: 0; }
+.features li { background: var(--panel); border-radius: 12px; padding: 0.875rem 1.125rem; margin-bottom: 0.75rem; border-left: 4px solid var(--edge-pink); }
+.features li:nth-child(even) { border-left-color: var(--edge-green); }
+.links { display: flex; flex-wrap: wrap; gap: 0.75rem; padding: 0; list-style: none; }
+.links a { display: inline-block; background: var(--panel); border: 2px solid var(--rule); border-radius: 999px; padding: 0.5rem 1.25rem; font-weight: 600; text-decoration: none; }
+.links a:hover { border-color: var(--link); }
+footer.site { border-top: 1px solid var(--rule); color: var(--muted); font-size: 1rem; }
+footer.site .wrap { padding-top: 1.25rem; padding-bottom: 2rem; }
+footer.site p { margin: 0 0 0.5rem; }
+@media (max-width: 30rem) {
+  body { font-size: 1.0625rem; }
+  h1 { font-size: 1.75rem; }
+  main { padding-top: 1.75rem; }
+  .hero { gap: 1rem; }
+  .hero img { width: 55px; height: 71px; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="tile.png" alt="" width="28" height="36">Wildcat Mahj</a>
+    <nav aria-label="Site">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="support.html" aria-current="page">Support</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <div class="wrap">
+    <h1>Support</h1>
+    <p class="lede">Need a hand? Start with the questions below. If they don't help, get in touch.</p>
+
+    <div class="note">
+      <p><strong>Contact:</strong> email <a href="mailto:SUPPORT_EMAIL">SUPPORT_EMAIL</a>. Please say which device you use and which version of iOS or iPadOS it runs. Wildcat Mahj is made by one person for fun, so replies may take a few days.</p>
+    </div>
+
+    <h2>Questions</h2>
+
+    <h3>What do I need to play?</h3>
+    <p>An iPhone or iPad with iOS 17 or iPadOS 17 or later. You don't need an internet connection or an account.</p>
+
+    <h3>How do I start a game?</h3>
+    <p>Open the app and a game is dealt for you. To start over, tap Menu in the top-right corner, then New game on the Play tab (Menu › Play). You're always East, so you start with 14 tiles and discard first.</p>
+
+    <h3>Why is it sideways on my iPhone?</h3>
+    <p>On iPhone, the game works in landscape only, because a rack of 14 tiles needs the width. Turn your phone sideways. On iPad, any orientation works.</p>
+
+    <h3>Where is Help?</h3>
+    <p>Tap the <strong>?</strong> button in the top-right corner, next to Menu. Help explains the Charleston, your turn, calling, the hands list, how to read the patterns, and how to edit cards.</p>
+
+    <h3>Why doesn't the app include a published card?</h3>
+    <p>Published American mahjong cards are copyrighted, so the app can't include one. It comes with its own original practice card, Wildcat 1337. To play a published card, add a card you own.</p>
+
+    <h3>How do I add my own card?</h3>
+    <p>Go to Menu › Cards. Under the list of cards, you can:</p>
+    <ul>
+      <li><strong>Import a card:</strong> pick a card file, for example one you exported from the app on another device.</li>
+      <li><strong>Make one by hand:</strong> type in the hands from your card, one at a time, or many at once with Paste many hands.</li>
+    </ul>
+    <p>Import a card also explains how to make a card file from a card you own: take a clear photo of each side, tap Copy instructions, paste the instructions into an AI chat app of your choice with your photos, then import the file it gives you. That last part happens outside Wildcat Mahj, under the chat app's own terms. AI can make mistakes, so check the imported hands against your card and fix any under Edit.</p>
+    <p>A new card joins the list without ending your game. Tap it in Menu › Cards when you want to play it.</p>
+
+    <h3>How do I back up a card or move it to another device?</h3>
+    <p>Go to Menu › Cards, tap ⋯ next to the card, then Export card, and save the file somewhere you'll find it, such as the Files app. On the other device, go to Menu › Cards › Import a card and tap Choose card file. Win counts stay on the device where you earned them.</p>
+    <p>Your cards and settings are also part of your normal iCloud or computer backup, if you have one turned on.</p>
+
+    <h3>How do I reset or delete my data?</h3>
+    <ul>
+      <li><strong>Clear a card's win counts:</strong> Menu › Cards, tap ⋯, then Reset win counts.</li>
+      <li><strong>Delete a card you imported or made:</strong> Menu › Cards, tap ⋯, then Delete card.</li>
+      <li><strong>Undo your edits to the practice card:</strong> Menu › Cards, tap Edit on it, then Restore the shipped Wildcat 1337 card.</li>
+      <li><strong>Delete everything:</strong> delete the app. All its data is on your device and goes with it.</li>
+    </ul>
+
+    <h3>What do the computer players do?</h3>
+    <p>Each one aims for the one to three hands on the card it's closest to, and changes its mind as tiles arrive. It passes and discards the tiles it needs least, never passes jokers, calls tiles that help its best hand, and declares mahjong when it has one. It doesn't peek at your rack or the wall. There's one difficulty level. You can make them play slower or faster with Bot speed in Menu › Play.</p>
+
+    <h3>What's simplified compared with a real table?</h3>
+    <p>There's no scoring or payment between players. If you declare mahjong and your hand isn't valid, the app shows the closest hand and what's wrong, and you keep playing. There's no dead-hand penalty. If the wall runs out, the game is a draw.</p>
+
+    <h3>What happens if I leave in the middle of a game?</h3>
+    <p>Switch away and come back, and the game carries on. If the app was closed, it offers to pick up where you left off when you open it again within 24 hours, with Keep playing or New game.</p>
+
+    <h3>Does the app collect my data?</h3>
+    <p>No. It has no network code and collects nothing. See the <a href="privacy.html">privacy policy</a>.</p>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p>Wildcat Mahj is an independent app. It is not affiliated with, sponsored by or endorsed by the National Mah Jongg League.</p>
+    <p><a href="index.html">Home</a> · <a href="privacy.html">Privacy</a></p>
+  </div>
+</footer>
+</body>
+</html>
